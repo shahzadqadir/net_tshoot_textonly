@@ -1,0 +1,9 @@
+term length 0
+show mpls ldp discovery
+show mpls ldp neighbor | i Peer
+show mpls ldp neighbor detail
+show run | inc session protection
+show mpls ldp nei | inc Target
+show arp
+show ip int brief
+show ip route
