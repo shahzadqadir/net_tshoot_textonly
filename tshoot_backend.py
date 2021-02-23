@@ -40,7 +40,7 @@ list_of_commands = [
 ]
 with open(f"{device_ip}", "w") as file:
     for command in list_of_commands:
-        result = show_cmd_ssh("192.168.0.1", "qadirs", "cisco123", command)
+        result = show_cmd_ssh(device_ip, "qadirs", device_password, command)
         file.write('\n' + command + "\n")
         for data in result:            
             file.write(data.strip('\r\n'))
